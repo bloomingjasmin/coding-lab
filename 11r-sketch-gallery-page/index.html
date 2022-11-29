@@ -2,30 +2,49 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>CCLab Project</title>
-
-  <link rel="stylesheet" type="text/css" href="style.css">
-
-  <script src="libraries/p5.min.js"></script>
-  <!-- Uncomment the line below if you use audio. -->
-  <!-- <script src="libraries/p5.sound.min.js"></script> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CCLab Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="libraries/p5.min.js"></script>
 </head>
 
 <body>
+    <section class="page" id="page">
 
-  <h1>My Project</h1>
+        <div class="content">
+            <h1>My Imaginary Creature</h1>
+            <span>CClab Mini Project</span>
+            <p> For this project, I first made a quick drawing on a piece of paper of a 12-petal-flower with a round
+                face in the center. To illustrate it on a p5.js canvas, I have decided to draw a petal using its
+                components- a triangle and a semi-circle attached to one side. I did it because I already knew the codes
+                for a triangle and a circle.
+                To place all 12 petals across the center I had to compute the central angle of each petal – 30 degrees.
+                When my sketch was ready, I moved to the p5.js editor. Firstly, I translate the origin to the center of
+                the canvas since it makes it easier to code a flower with rotational symmetry. I also created a push and
+                pop for petals and face to keep the codes separate since I wanted to animate petals and face
+                differently.
+                So my number one task was to reillustrate one petal on a canvas. I asked professor Moon to help me
+                calculate the coordinates of the vertex of a triangle that was a part of one petal. After I finished
+                coding one petal, he also helped me implement the rotation of petals across the center of the flower by
+                using frameCount as a time factor.
+                Then I worked on the face of the creature. I drew two ellipses for the eyes and slightly rotated them to
+                create a more kind look. For the mouth, I wanted to make it smiling and widely open. I had to learn how
+                to code an arc since I could not achieve the desired look with a semi-circle. After the face contour was
+                done I used randomness to fill the color of the mouth and eyes, making my creature even more funny and
+                excited.
+                In contrast, I wanted to make a sad look too. So I used a condition mouseIsPressed to switch from a
+                happy to a sad face.</p>
+            <a href="#" class="link">view p5.js sketch</a>
+        </div>
 
-  <!-- the following div will contain the p5 canvas. -->
-  <div id="canvasContainer"></div>
+        <div class="canvasContainer" id="canvasContainer">
 
-  <p>This is my wonderful project!</p>
-  <button onclick="buttonClicked()">Click!</button>
+        </div>
+        <script src="sketch.js"></script>
+    </section>
 
-  <!-- the script tag below should always be at the bottom, right before the closing body tag -->
-  <script src="sketch.js"></script>
+
 </body>
 
 </html>

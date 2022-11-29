@@ -1,8 +1,40 @@
-html, body {
-  margin: 0;
-  padding: 0;
+html,
+body {
+    margin: 0;
+    padding: 0;
 }
 
 canvas {
-  display: block;
+    display: block;
+}
+
+
+.page {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../11r-sketch-gallery-page/images/flower_background.jpg);
+    background-size: auto;
+    background-position: center;
+}
+
+.page h1 {
+    max-width: 50rem;
+    font-size: 4rem;
+    color: black;
+}
+
+.page span {
+    max-width: 50rem;
+    font-size: 3.5rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+.page p {
+    max-width: 50rem;
+    font-size: 1.5rem;
+    color: darkgray;
+    padding: 1rem 0;
+    line-height: 1.5;
 }
