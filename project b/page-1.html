@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CCLab Project</title>
+
+  <link rel="stylesheet" type="text/css" href="style2.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="div-header">
+    <h1>Create Your Own Beaded Earring!</h1>
+  </div>
+
+
+
+  <div class="div-footer">
+    <p>Start by selecting a color by clicking the desired color button , to generate a bead press the ENTER key, to
+      adjust the size use the "w" key to increse it and "s" key to decrease it, to restart press "r" key</p>
+  </div>
+
+
+  <div class="main-container">
+    <div class="all-buttons">
+      <div class="p5-buttons">
+        <button1 onclick="addBead()">Add new bead!</button>
+      </div>
+      <div class="p5-buttons">
+        <button2 onclick="larger()">Larger</button>
+      </div>
+      <div class="p5-buttons">
+        <button3 onclick="smaller()">Smaller</button>
+      </div>
+      <div class="p5-buttons">
+        <button4 onclick="resetBeads()">Restart!</button>
+      </div>
+
+    </div>
+    <div id="p5Canvas"></div>
+  </div>
+
+
+
+  <button class="try-button" type="button" onclick="showTryItOn()">
+    Try it on!
+  </button>
+  <button class="try-button" type="button" onclick="showInterface()">
+    Show Interface!
+  </button>
+  <!-- the script tag below should always be at the bottom, right before the closing body tag -->
+  <script src="sketch.js"></script>
+</body>
+
+</html>
