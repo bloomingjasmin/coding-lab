@@ -7,6 +7,9 @@ function setup() {
 function draw() {
     background(0);
     drawCreature(width / 2, height / 2);
+    fill(255)
+    textSize(15);
+    text("Don't press on me, press on Start!", width / 4, height * 19 / 20);
 }
 
 function drawCreature(x, y) {

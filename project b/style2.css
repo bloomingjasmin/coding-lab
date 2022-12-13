@@ -16,21 +16,33 @@ canvas {
 }
 
 .div-header {
-  background-color: rgba(255, 113, 206);
+  color: rgba(255, 113, 206);
+  font-size: 50px;
+  /* background-color: rgba(255, 113, 206); */
+  /* position: fixed; */
+  /* top: 40%; */
   width: 100%;
-  height: fit-content;
+  height: 50px;
+  /* margin-bottom: 40%; */
   text-align: center;
+  padding-bottom: 80px;
   font-family: 'Rubik Vinyl', cursive;
 }
 
 .div-footer {
-  background-color: rgba(1, 205, 254);
+  font-size: 15px;
+  color: rgb(110, 215, 241);
+
+  /* background-color: rgb(110, 215, 241); */
+  /* position: fixed; */
+  /* top: 60%; */
+  /* padding-bottom: 30px; */
   width: auto;
   height: fit-content;
   text-align: center;
   font-family: 'DM Serif Display', serif;
-  padding-left: 25%;
-  padding-right: 25%;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 
@@ -44,9 +56,13 @@ canvas {
   transform: translate
 }
 
+#tryLeft {
+  padding: 24px 43px;
+
+}
+
 .try-button {
   position: relative;
-  left: 47.5%;
   align-items: center;
   appearance: none;
   background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
@@ -143,6 +159,7 @@ canvas {
   transform: translate(-50%, 0);
 }
 
+
 .p5-buttons {
   align-items: center;
   appearance: none;
@@ -189,9 +206,125 @@ canvas {
 
 .all-buttons {
   background-color: #000;
-  width: 800px;
+  width: 850px;
   display: flex;
   justify-content: center;
+}
+
+.lower-buttons {
+
+  width: 850px;
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#restart_button {
+  margin-left: 180px;
+}
+
+.addbead {
+  align-items: center;
+  appearance: none;
+  background-clip: padding-box;
+  background-color: initial;
+  background-image: none;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: Eina01, sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 24px;
+  margin: 0;
+  min-height: 64px;
+  outline: none;
+  overflow: visible;
+  padding: 19px 26px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: auto;
+  word-break: keep-all;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .addbead {
+    padding: 19px 32px;
+  }
+}
+
+.addbead:before,
+.addbead:after {
+  border-radius: 80px;
+}
+
+.addbead:before {
+  background-color: rgba(249, 58, 19, .32);
+  content: "";
+  display: block;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+}
+
+.addbead:after {
+  background-color: initial;
+  background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  content: "";
+  display: block;
+  left: 4px;
+  overflow: hidden;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  transition: all 100ms ease-out;
+  z-index: -1;
+}
+
+.addbead:hover:not(:disabled):after {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition-timing-function: ease-in;
+}
+
+.addbead:active:not(:disabled) {
+  color: #ccc;
+}
+
+.addbead:active:not(:disabled):after {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+  bottom: 4px;
+  left: 4px;
+  right: 4px;
+  top: 4px;
+}
+
+.addbead:disabled {
+  cursor: default;
+  opacity: .24;
 }
 
 /* 

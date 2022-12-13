@@ -21,21 +21,27 @@
 </head>
 
 <body>
-  <div class="div-header">
-    <h1>Create Your Own Beaded Earring!</h1>
-  </div>
+  <a style="text-decoration:none" href="index.html">
+    <div class="div-header">
+      <h1>Create Your Own Beaded Earring!</h1>
+    </div>
+  </a>
 
 
 
   <div class="div-footer">
-    <p>Start by selecting a color by clicking the desired color button , to generate a bead press the ENTER key, to
-      adjust the size use the "w" key to increse it and "s" key to decrease it, to restart press "r" key</p>
+    <!-- <p1>"Add New Bead!" = ENTER key </p1>
+    <p2> "Larger" = “w” key</p2>
+    <p3> "Smaller" = “s” key </p3>
+    <p4> "Restart" = “r” key</p4> -->
+
   </div>
 
 
   <div class="main-container">
+
     <div class="all-buttons">
-      <div class="p5-buttons">
+      <div class="addbead">
         <button1 onclick="addBead()">Add new bead!</button>
       </div>
       <div class="p5-buttons">
@@ -44,7 +50,7 @@
       <div class="p5-buttons">
         <button3 onclick="smaller()">Smaller</button>
       </div>
-      <div class="p5-buttons">
+      <div class="p5-buttons" id="restart_button">
         <button4 onclick="resetBeads()">Restart!</button>
       </div>
 
@@ -53,13 +59,15 @@
   </div>
 
 
+  <div class="lower-buttons">
+    <button class="try-button" id="tryLeft" type="button" onclick="showTryItOn()">
+      Try it on!
+    </button>
+    <button class="try-button" type="button" onclick="showInterface()">
+      Show Interface!
+    </button>
+  </div>
 
-  <button class="try-button" type="button" onclick="showTryItOn()">
-    Try it on!
-  </button>
-  <button class="try-button" type="button" onclick="showInterface()">
-    Show Interface!
-  </button>
   <!-- the script tag below should always be at the bottom, right before the closing body tag -->
   <script src="sketch.js"></script>
 </body>
