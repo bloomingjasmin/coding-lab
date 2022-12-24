@@ -2,6 +2,7 @@ function setup() {
   let canvas = createCanvas(500, 400);
   canvas.parent("canvasContainer");
 
+
 }
 
 
@@ -9,7 +10,7 @@ function draw() {
   // beginGif();
   background(230, 215, 255);
   textSize(15);
-  text("don't press on me!", 10, 30);
+  text("Don't press on me!", width / 2.7, height * 19 / 20);
   drawCreature(width / 2, height / 2);
 
   //endGif(450);
@@ -78,11 +79,3 @@ function drawCreature(x, y) {
 }
 
 
-// function draw() {
-//   //
-// }
-
-// function buttonClicked() {
-//   console.log("Button Clicked!");
-//   background(random(255));
-// }

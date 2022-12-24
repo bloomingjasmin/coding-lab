@@ -1,41 +1,34 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
-}
 
-canvas {
-    display: block;
+    margin: 100px;
+    background-color: rgb(230, 215, 255);
 }
 
 
-.page {
-    display: flex;
-    align-items: center;
-    min-height: 100vh;
-    background: url(../11r-sketch-gallery-page/images/flower_background.jpg);
-    background-size: auto;
-    background-position: center;
+
+#canvasContainer {
+    position: absolute;
+    left: 33%;
 }
+
 
 .page h1 {
-    max-width: 50rem;
-    font-size: 4rem;
-    color: black;
+    font-size: 90px;
+    color: rgb(217, 10, 134);
+    font-family: 'Sevillana', cursive;
+    margin-left: 15%;
 }
 
-.page span {
-    max-width: 50rem;
-    font-size: 3.5rem;
-    padding: 1rem 0;
-    line-height: 1.5;
+.page h2 {
+    color: rgb(5, 118, 80);
+    font-size: 30px;
+    font-family: 'Nanum Gothic', sans-serif;
+    margin-left: 40%;
 }
 
-.page p {
-    max-width: 50rem;
-    font-size: 1.5rem;
-    color: darkgray;
-    padding: 1rem 0;
-    line-height: 1.5;
-    margin-left: 3rem;
+.content {
+    color: rgb(142, 9, 115);
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
 }
